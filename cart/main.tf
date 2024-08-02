@@ -23,11 +23,20 @@ terraform {
 #  count = length(data.kubectl_file_documents.cart.manifests)
 #}
 
-data "kubectl_filename_list" "manifests" {
+#data "kubectl_filename_list" "manifests" {
+#  pattern = "pod.yaml"
+#}
+#
+#resource "kubectl_manifest" "test" {
+#  count     = length(data.kubectl_filename_list.manifests.matches)
+#  yaml_body = file(element(data.kubectl_filename_list.manifests.matches, count.index))
+#}
+
+data "kubectl_path_documents" "docs" {
   pattern = "pod.yaml"
 }
 
 resource "kubectl_manifest" "test" {
-  count     = length(data.kubectl_filename_list.manifests.matches)
-  yaml_body = file(element(data.kubectl_filename_list.manifests.matches, count.index))
+  count     = length(data.kubectl_path_documents.docs.documents)
+  yaml_body = element(data.kubectl_path_documents.docs.documents, count.index)
 }
