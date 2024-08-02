@@ -15,3 +15,12 @@ spec:
   containers:
     - name: c1
       image: nginx
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cart3
+spec:
+  containers:
+    - name: c1
+      image: nginx
