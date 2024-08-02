@@ -24,7 +24,7 @@ terraform {
 #}
 
 data "kubectl_filename_list" "manifests" {
-  pattern = "pod.yaml"
+  pattern = "*.yaml"
 }
 
 resource "kubectl_manifest" "test" {
