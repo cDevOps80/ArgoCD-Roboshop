@@ -12,6 +12,7 @@ spec:
           value: {{ $v }}
       {{- end }}
       imagePullPolicy: Always
+#
 
 
 
