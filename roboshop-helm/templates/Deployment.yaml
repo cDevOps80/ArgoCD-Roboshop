@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: {{ .Release.Name }}-{{ .Values.Image.tag }}
+  name: {{ .Release.Name }}-{{ .Values.Image.tag | replace "." "-" }}
 spec:
   containers:
     - name: {{ .Release.Name }}
-      image: {{ default "docker.io" .Values.Image.registry }}/{{ .Release.Name }}:{{ .Values.Image.tag | replace "-" "." }}
+      image: {{ default "docker.io" .Values.Image.registry }}/{{ .Release.Name }}:{{ .Values.Image.tag }}
 
