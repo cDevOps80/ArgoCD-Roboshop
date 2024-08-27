@@ -4,6 +4,6 @@ metadata:
   name: {{ .Release.Name }}-{{ .Values.Image.tag }}
 spec:
   containers:
-    - name: {{ Release.Name }}
+    - name: {{ .Release.Name }}
       image: {{ default "docker.io" .Values.Image.registry }}/{{ .Release.Name }}:{{ .Values.Image.tag | replace "-" "." }}
 
