@@ -7,9 +7,9 @@ spec:
     - name: {{ .Release.Name }}
       image: {{ default "docker.io" .Values.Image.registry }}/{{ .Release.Name }}-rhel9:{{ default "latest" .Values.Image.tag }}
       env:
-       {{ range $key,$value :- .Values.env }}
-         name: {{ $key }}
-         value: {{ $value }}
+       {{ range $k,$v :- .Values.env }}
+         name: {{ $k }}
+         value: {{ $v }}
        {{ end }}
 
 
