@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: {{ .Release.Name }}
-      image: {{ .Release.Name }}-rhel9:{{ default "latest" .Values.Image.tag }}
+      image: chaitu1812/{{ .Release.Name }}-rhel9:{{ default "latest" .Values.Image.tag }}
       env:
        {{- range $k, $v := .Values.env }}
         - name: {{ $k }}
