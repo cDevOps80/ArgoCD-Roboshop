@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: {{ Release.Name }}-{{ Values.Image.version }}
+spec:
+  containers:
+    - name: {{ Release.Name }}
+      image: {{ .Values.Image.registry }}/{{ .Release.Name }}:{{ Values.Image.version }}
+
