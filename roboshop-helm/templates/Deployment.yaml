@@ -6,4 +6,5 @@ spec:
   containers:
     - name: {{ .Release.Name }}
       image: {{ default "docker.io" .Values.Image.registry }}/{{ .Release.Name }}:{{ default "latest" .Values.Image.tag }}
+      env: {{ toYaml .Values.env | nindent 9 }}
 

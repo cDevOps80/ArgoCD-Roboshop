@@ -1,2 +1,8 @@
 Image:
   tag: v1.0.1
+env:
+  catalogue: localhost
+  user: localhost
+  cart: localhost
+  shipping: localhost
+  payment: localhost
