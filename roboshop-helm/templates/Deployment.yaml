@@ -5,12 +5,12 @@ metadata:
 spec:
   containers:
     - name: {{ .Release.Name }}
-      image: chaitu1812/{{ .Release.Name }}-rhel9:{{ default "latest" .Values.Image.tag }}
+      image: docker.io/chaitu1812/{{ .Release.Name }}-rhel9:{{ default "latest" .Values.Image.tag }}
       env:
-       {{- range $k, $v := .Values.env }}
+      {{- range $k, $v := .Values.env }}
         - name: {{ $k }}
           value: {{ $v }}
-       {{- end }}
+      {{- end }}
       imagePullPolicy: Always
 
 
