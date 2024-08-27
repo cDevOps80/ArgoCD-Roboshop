@@ -5,5 +5,5 @@ metadata:
 spec:
   containers:
     - name: {{ .Release.Name }}
-      image: {{ default "docker.io" .Values.Image.registry }}/{{ .Release.Name }}:{{ .Values.Image.tag }}
+      image: {{ default "docker.io" .Values.Image.registry }}/{{ .Release.Name }}:{{ default "latest" .Values.Image.tag }}
 
