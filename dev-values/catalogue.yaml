@@ -4,7 +4,7 @@ env:
   MONGO: true
   MONGO_URL: "mongodb://mongodb:27017/catalogue"
 
-load-schema:
+load_schema:
   enabled: true
   env:
     COMPONENT: "mongo"
