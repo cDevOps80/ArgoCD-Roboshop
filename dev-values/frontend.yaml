@@ -1,5 +1,5 @@
 Image:
-  tag: v1.0.1
+  tag: null
 env:
   catalogue: catalogue-service
   user: localhost
