@@ -1,0 +1,19 @@
+{{- if .Values.load-schema.enabled }}
+apiVersion: v1
+kind: Pod
+metadata:
+  name: {{ .Release.Name  }}-load-schema
+spec:
+  containers:
+    - name: {{ .Release.Name  }}-load-schema
+      image: docker.io/chaitu1812/{{ .Release.Name }}-rhel9:{{ default "latest" .Values.Image.tag }}
+      env:
+      {{ - range $k, $v := .Values.load-schema.env }}
+        - name: {{ $k }}
+          value: {{ $v }}
+      {{ - end }}
+      imagePullPolicy: Always
+{{- end }}
+
+
+
