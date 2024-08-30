@@ -1,7 +1,7 @@
 Image:
   tag: v1.0.1
 env:
-  catalogue: localhost
+  catalogue: catalogue-service
   user: localhost
   cart: localhost
   shipping: localhost
