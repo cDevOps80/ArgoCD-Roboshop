@@ -9,9 +9,9 @@ spec:
   restartPolicy: Never
   containers:
     - name: {{ .Release.Name  }}-load-schema
-      image: docker.io/chaitu1812/{{ .Release.Name }}-rhel9:{{ default "latest" .Values.Image.tag }}
+      image: docker.io/chaitu1812/load-schema
       env:
-      {{ - range $k, $v := .Values.load_schema.env }}
+      {{- range $k, $v := .Values.load_schema.env }}
         - name: {{ $k }}
           value: {{ $v }}
       {{ - end }}
