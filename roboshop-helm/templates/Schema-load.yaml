@@ -1,4 +1,4 @@
-{{ if .Values.load-schema.enabled }}
+{{- if .Values.load-schema.enabled -}}
 apiVersion: v1
 kind: Pod
 metadata:
