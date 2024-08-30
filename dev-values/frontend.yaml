@@ -6,3 +6,8 @@ env:
   cart: localhost
   shipping: localhost
   payment: localhost
+
+service:
+  type: NodePort
+  port: 80
+  containerport: 80

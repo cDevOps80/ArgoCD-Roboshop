@@ -4,6 +4,11 @@ env:
   MONGO: true
   MONGO_URL: "mongodb://mongodb:27017/catalogue"
 
+service:
+  port: 8080
+  containerport: 8080
+
+
 load_schema:
   enabled: true
   env:

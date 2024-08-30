@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     component: {{ .Release.Name }}
-  type: {{ .Values.service.type }}
+  type: {{ default "ClusterIP" .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
       targetPort: {{ .Values.service.containerport }}
