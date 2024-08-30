@@ -12,8 +12,8 @@ spec:
       image: chaitu1812/load-schema-rhel9
       env:
       {{- range $k, $v := .Values.load_schema.env }}
-        - name: {{ $k | quote }}
-          value: {{ $v | quote }}
+        - name: {{ $k  }}
+          value: {{ $v }}
       {{- end }}
       imagePullPolicy: Always
 {{- end }}
