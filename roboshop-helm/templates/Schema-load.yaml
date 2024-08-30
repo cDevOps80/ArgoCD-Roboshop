@@ -9,7 +9,7 @@ spec:
   restartPolicy: Never
   containers:
     - name: {{ .Release.Name  }}-load-schema
-      image: docker.io/chaitu1812/load-schema
+      image: chaitu1812/load-schema-rhel9
       env:
       {{- range $k, $v := .Values.load_schema.env }}
         - name: {{ $k }}
