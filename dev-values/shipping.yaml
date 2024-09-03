@@ -11,7 +11,7 @@ load_schema:
     COMPONENT: "mysql"
     CODE_URL: "https://roboshop-artifacts.s3.amazonaws.com/shipping-v3.zip"
     SCHEMA_FILE: "/app/db"
-    MYSQL_ADDRESS: "72.31.88.243"
+    MYSQL_ADDRESS: "172.31.88.243"
     MYSQL_USER: "root"
     MYSQL_PASSWORD: "RoboShop@1"
 
