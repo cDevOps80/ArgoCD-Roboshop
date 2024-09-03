@@ -9,3 +9,6 @@ spec:
   ports:
     - port: {{ .Values.service.port }}
       targetPort: {{ .Values.service.containerport }}
+       {{- if eq .Release.Name "frontend" }}
+      nodePort: 32525
+       {{- end }}
