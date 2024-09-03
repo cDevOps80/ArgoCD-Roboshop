@@ -3,7 +3,7 @@ Image:
 env:
   catalogue: catalogue-service
   user: user-service
-  cart: localhost
+  cart: cart-service
   shipping: localhost
   payment: localhost
 
