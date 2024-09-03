@@ -1,0 +1,18 @@
+Image:
+  tag: null
+
+service:
+  port: 8080
+  containerport: 8080
+
+load_schema:
+  enabled: true
+  env:
+    COMPONENT: "mysql"
+    CODE_URL: "https://roboshop-artifacts.s3.amazonaws.com/shipping-v3.zip"
+    SCHEMA_FILE: "/app/db"
+    MYSQL_ADDRESS: "72.31.88.243"
+    MYSQL_USER: "root"
+    MYSQL_PASSWORD: "RoboShop@1"
+
+
