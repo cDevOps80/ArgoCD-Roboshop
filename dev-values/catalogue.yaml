@@ -2,7 +2,7 @@ Image:
   tag: null
 env:
   MONGO: true
-  MONGO_URL: mongodb://107.21.184.67:27017/catalogue
+  MONGO_URL: mongodb://172.31.88.243:27017/catalogue
 
 
 service:
