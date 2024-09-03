@@ -1,2 +1,4 @@
 load_schema:
   enabled: false
+service:
+  type: null
