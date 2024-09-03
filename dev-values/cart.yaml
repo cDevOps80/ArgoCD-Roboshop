@@ -1,0 +1,11 @@
+Image:
+  tag: null
+
+env:
+  REDIS_HOST: 172.31.88.243
+  CATALOGUE_HOST: catalogue-service
+  CATALOGUE_PORT: 8080
+
+service:
+  port: 8080
+  containerport: 8080
