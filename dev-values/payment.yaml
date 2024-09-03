@@ -1,0 +1,16 @@
+Image:
+  tag: null
+
+service:
+  port: 8080
+  containerport: 8080
+
+
+env:
+   CART_HOST: cart
+   CART_PORT: 8080
+   USER_HOST: userd
+   USER_PORT: 8080
+   AMQP_HOST: 172.31.88.243
+   AMQP_USER: roboshop
+   AMQP_PASS: roboshop123
