@@ -4,7 +4,7 @@ env:
   catalogue: catalogue-service
   user: user-service
   cart: cart-service
-  shipping: localhost
+  shipping: shipping-service
   payment: localhost
 
 service:
