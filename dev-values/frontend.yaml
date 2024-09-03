@@ -5,7 +5,7 @@ env:
   user: user-service
   cart: cart-service
   shipping: shipping-service
-  payment: localhost
+  payment: payment-service
 
 service:
   type: NodePort
