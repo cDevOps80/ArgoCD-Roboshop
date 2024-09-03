@@ -2,7 +2,7 @@ Image:
   tag: null
 env:
   catalogue: catalogue-service
-  user: localhost
+  user: user-service
   cart: localhost
   shipping: localhost
   payment: localhost
