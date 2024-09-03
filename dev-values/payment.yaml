@@ -7,9 +7,9 @@ service:
 
 
 env:
-   CART_HOST: cart
+   CART_HOST: cart-service
    CART_PORT: 8080
-   USER_HOST: userd
+   USER_HOST: user-service
    USER_PORT: 8080
    AMQP_HOST: 172.31.88.243
    AMQP_USER: roboshop
