@@ -16,4 +16,4 @@ load_schema:
     COMPONENT: mongo
     CODE_URL: https://roboshop-artifacts.s3.amazonaws.com/catalogue-v3.zip
     SCHEMA_FILE: /app/db/master-data.js
-    MONGO_DB_ADDRESS: 107.21.184.67
+    MONGO_DB_ADDRESS: 172.31.88.243
