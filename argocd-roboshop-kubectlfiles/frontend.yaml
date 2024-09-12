@@ -10,7 +10,6 @@ spec:
     path: roboshop-helm
     targetRevision: main
     helm:
-      releaseName: frontend-helm
       valueFiles:
         - ../dev-values/frontend.yaml
   destination:
