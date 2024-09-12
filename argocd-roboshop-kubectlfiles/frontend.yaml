@@ -10,6 +10,7 @@ spec:
     path: roboshop-helm
     targetRevision: main
     helm:
+      releaseName: sealed-secrets
       valueFiles:
         - ../dev-values/frontend.yaml
   destination:
