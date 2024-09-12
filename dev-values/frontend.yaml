@@ -1,11 +1,11 @@
 Image:
   tag: null
 env:
-  catalogue: catalogue-service
-  user: user-service
-  cart: cart-service
-  shipping: shipping-service
-  payment: payment-service
+  catalogue: localhost
+  user: localhost
+  cart: localhost
+  shipping: localhost
+  payment: localhost
 
 service:
   type: NodePort
