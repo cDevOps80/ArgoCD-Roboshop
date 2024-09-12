@@ -4,7 +4,7 @@ metadata:
   name: frontend
   namespace: argocd
 spec:
-  project: frontend
+  project: default
   source:
     repoURL: https://github.com/cDevOps80/ArgoCD-Roboshop.git
     path: roboshop-helm
